@@ -17,14 +17,14 @@
       function maleBild() {
 	  const meinBild = document.getElementById("bildflaeche");
 	  const bild = meinBild.getContext("2d");
-
+	  bild.fillStyle = "red";
 	  bild.fillRect(20, 20, 150, 100);
       }
     </script>
   </head>
   <body>
-    Hallo HTML!
-    <script>init();</script>
-    <canvas id="bildflaeche" width="300" height="150"></canvas> 
+    Hallo HTML!<br clear="right">
+    <canvas id="bildflaeche" width="300" height="150" style="border:1px black solid;"></canvas>
+    <script>maleBild();init();</script>
   </body>
 </html>
