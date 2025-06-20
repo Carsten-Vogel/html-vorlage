@@ -14,10 +14,17 @@
       function init(){
 	  document.write("<br>Hallo JavaScript!");
       }
+      function maleBild() {
+	  const meinBild = document.getElementById("bildflaeche");
+	  const bild = meinBild.getContext("2d");
+
+	  bild.fillRect(20, 20, 150, 100);
+      }
     </script>
   </head>
   <body>
     Hallo HTML!
     <script>init();</script>
+    <canvas id="bildflaeche" width="300" height="150"></canvas> 
   </body>
 </html>
